@@ -15,7 +15,8 @@
         <button type="button" class="btn btn-primary">
             <a class="nav-link" href="http://127.0.0.1:8000/">Torna alla pagina Welcome</a>
         </button>
-        <div id="card"></div>
+        <div id="my-card" class="row">
+        </div>
     </div>
 </body>
 
@@ -28,12 +29,13 @@
         'Sono la Card numero 3',
         'Sono la Card numero 4',
         'Sono la Card numero 5',
+        'Sono la Card numero 6'
     ];
 
-    const myCard = document.getElementById('card');
+    const myCard = document.getElementById('my-card');
 
 
     for (i = 0; i < myArr.length; i++) {
-        myCard.innerHTML += `<div>${myArr[i]}<div>`;
+        myCard.innerHTML += `<div class="col-4"><div class="card">${myArr[i]}<div></div>`;
     }
 </script>
