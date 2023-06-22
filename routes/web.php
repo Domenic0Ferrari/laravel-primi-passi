@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('home');
 });
+// FEATURES
+Route::get('/features', function () {
+    return view('features');
+});
+// FEATURES
+Route::get('/pricing', function () {
+    return view('pricing');
+});
