@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Sono la pagina Home</h1>
-        <button>
+        <button type="button" class="btn btn-primary">
             <a class="nav-link" href="http://127.0.0.1:8000/">Torna alla pagina Welcome</a>
         </button>
     </div>
