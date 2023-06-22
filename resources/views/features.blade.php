@@ -15,9 +15,12 @@
     }
 
     .square {
-        width: 90px;
-        height: 100px;
+        width: calc(100% / 10);
+        height: 130px;
         border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 </style>
 
@@ -43,15 +46,15 @@
     const myTable = document.getElementById('my-table');
 
     function stampTable() {
-        for (i = 0; i < 101; i++) {
+        for (i = 1; i < 101; i++) {
             if (i % 15 == 0) {
-                myTable.innerHTML += `<div class="square">FizzBuzz</div>`
+                myTable.innerHTML += `<div class="square bg-primary">FizzBuzz</div>`
             } else if (i % 3 == 0) {
-                myTable.innerHTML += `<div class="square">Buzz</div>`
+                myTable.innerHTML += `<div class="square bg-success">Buzz</div>`
             } else if (i % 5 == 0) {
-                myTable.innerHTML += `<div class="square">Fizz</div>`
+                myTable.innerHTML += `<div class="square bg-warning">Fizz</div>`
             } else {
-                myTable.innerHTML += `<div class="square">${i}</div>`
+                myTable.innerHTML += `<div class="square bg-info">${i}</div>`
             }
         }
     }
