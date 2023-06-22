@@ -15,7 +15,25 @@
         <button type="button" class="btn btn-primary">
             <a class="nav-link" href="http://127.0.0.1:8000/">Torna alla pagina Welcome</a>
         </button>
+        <div id="card"></div>
     </div>
 </body>
 
 </html>
+
+<script>
+    const myArr = [
+        'Sono la Card numero 1',
+        'Sono la Card numero 2',
+        'Sono la Card numero 3',
+        'Sono la Card numero 4',
+        'Sono la Card numero 5',
+    ];
+
+    const myCard = document.getElementById('card');
+
+
+    for (i = 0; i < myArr.length; i++) {
+        myCard.innerHTML += `<div>${myArr[i]}<div>`;
+    }
+</script>
