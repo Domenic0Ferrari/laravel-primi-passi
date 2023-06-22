@@ -46,6 +46,8 @@
     const myTable = document.getElementById('my-table');
 
     function stampTable() {
+
+        myTable.innerHTML = "";
         for (i = 1; i < 101; i++) {
             if (i % 15 == 0) {
                 myTable.innerHTML += `<div class="square bg-primary">FizzBuzz</div>`
