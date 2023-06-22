@@ -21,7 +21,7 @@
             </button> -->
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/home">Home</a>
+                    <a class="nav-link" href="http://127.0.0.1:8000/home">Home</a>
                     <a class="nav-link" href="http://127.0.0.1:8000/features">Features</a>
                     <a class="nav-link" href="http://127.0.0.1:8000/pricing">Pricing</a>
                     <!-- <a class="nav-link disabled">Disabled</a> -->
